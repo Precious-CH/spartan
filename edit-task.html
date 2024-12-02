@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskMaster - Edit Task</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>TaskMaster</h1>
+      <a href="dashboard.html"><button>Back to Dashboard</button></a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Edit Task</h2>
+      <form id="editTaskForm">
+        <label for="title">Task Title:</label>
+        <input type="text" id="title" name="title" required>
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description"></textarea>
+
+        <label for="priority">Priority:</label>
+        <select id="priority" name="priority">
+          <option value="High">High</option>
+          <option value="Medium">Medium</option>
+          <option value="Low">Low</option>
+        </select>
+
+        <label for="deadline">Deadline:</label>
+        <input type="date" id="deadline" name="deadline" required>
+
+        <button type="submit">Update Task</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 TaskMaster. All Rights Reserved.</p>
+  </footer>
+  <script src="./js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body styles */
+body {
+    background-color: rgb(0, 0, 0);
+    color: rgb(16, 133, 243);
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex; /* Flexbox for centering the page */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+    flex-direction: column; /* Vertical alignment */
+}
+
+/* Centering the main text container */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    background-color: #108afc;
+    padding: 10px;
+    text-align: center;
+    color: rgb(10, 7, 7);
+    border-radius: 5px;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+header nav a {
+    color: rgb(245, 173, 41);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+header nav a:hover {
+    background-color: #000000;
+}
+
+/* Form styles */
+form {
+    background-color: rgb(2, 1, 1);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ensure form takes full width */
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="datetime-local"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button {
+    background-color: #138afa;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #000000;
+}
+
+/* Table styles for tasks */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+table td button {
+    background-color: #f44336;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+table td button:hover {
+    background-color: #e53935;
+}
+
+/* Responsive Design */
+
+/* Mobile View: Width ≤ 480px */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Tablet View: Width 481px–768px */
+@media (min-width: 481px) and (max-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Desktop View: Width > 768px */
+@media (min-width: 769px) {
+    body {
+        font-size: 16px;
+    }
+
+    .container {
+        width: 80%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+}
